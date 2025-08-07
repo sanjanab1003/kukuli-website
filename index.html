@@ -39,4 +39,120 @@
       margin: auto;
     }
 
-    .fun
+    .fun-facts, .poem {
+      background: #f8f8f8;
+      padding: 1rem 1.5rem;
+      border-left: 6px solid #d81b60;
+      border-radius: 1rem;
+      margin-top: 2rem;
+    }
+
+    .fun-facts ul {
+      padding-left: 1rem;
+    }
+
+    .bless-button {
+      display: block;
+      margin: 2rem auto;
+      padding: 1rem 2rem;
+      font-size: 1.2rem;
+      background-color: #ec407a;
+      color: white;
+      border: none;
+      border-radius: 1rem;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .bless-button:hover {
+      background-color: #c2185b;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      padding: 2rem 1rem;
+      color: #999;
+    }
+
+    .poem p {
+      font-style: italic;
+      margin: 0.5rem 0;
+    }
+
+    #blessing {
+      text-align: center;
+      font-size: 1.2rem;
+      margin-top: 1rem;
+      color: #d81b60;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Meet Kukuli 🐀</h1>
+    <img src="kukuli.jpg" alt="Kukuli the rat" class="rat-photo"/>
+  </header>
+
+  <section>
+    <h2>About Kukuli</h2>
+    <p>
+      Kukuli is extremely small and fluffy, with white fur as soft as winter snow. His adorable button-like black eyes and sharp little nose make everyone instantly fall in love. 
+      He’s so damn fast — he “zups” around, and nothing can match his speed! 
+    </p>
+    <p>
+      He’s incredibly sweet and clingy to his beloved owner. Being with Kukuli makes all the worries of the world disappear. Every human lucky enough to cross paths with him receives a bit of joy — his superpower is giving comfort and being way too cute in everything he does.
+    </p>
+
+    <div class="fun-facts">
+      <h3>Fun Facts & Powers</h3>
+      <ul>
+        <li>💨 Zup Speed: Unmatched</li>
+        <li>✨ Fur Softness: Winter-Level</li>
+        <li>🖤 Eyes: Button-like & Magical</li>
+        <li>🌟 Power: Comfort Bringer</li>
+        <li>🥹 Sweetness: 100%</li>
+      </ul>
+    </div>
+
+    <div class="poem">
+      <h3>A Poem for Kukuli</h3>
+      <p>My little sweet pea Kukuli,</p>
+      <p>He is extremely tickly.</p>
+      <p>With fur as white as winter snow,</p>
+      <p>A soft, smol wonder, head to toe.</p>
+      <p>His eyes like tiny beads of light,</p>
+      <p>Sparkle softly with pure delight.</p>
+      <p>His tiny paws are quick & spry,</p>
+      <p>A curious spark in each small eye.</p>
+      <p>With tiny paws, he stirs with care,</p>
+      <p>A chef so skilled beyond compare.</p>
+      <p>With every squeak my heart takes flight,</p>
+      <p>My Kukuli is my life & light.</p>
+    </div>
+
+    <button class="bless-button" onclick="giveComfort()">Receive Kukuli’s Comfort 💗</button>
+    <p id="blessing"></p>
+  </section>
+
+  <footer>
+    Made with love for Kukuli 🐾
+  </footer>
+
+  <script>
+    function giveComfort() {
+      const comforts = [
+        "🌸 Kukuli sends you tiny hugs!",
+        "🐀 You feel a small warm fluff on your lap — it's Kukuli.",
+        "✨ Kukuli has zup’d your worries away!",
+        "🥹 You are now blessed with peaceful thoughts.",
+        "💖 Kukuli says: 'You're loved, always.'"
+      ];
+      const random = comforts[Math.floor(Math.random() * comforts.length)];
+      document.getElementById("blessing").textContent = random;
+    }
+  </script>
+
+</body>
+</html>
