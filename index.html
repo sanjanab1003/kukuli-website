@@ -124,6 +124,31 @@
   box-shadow: 0 0 10px #ccc;
 }
 
+    .poem-flex {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  background-color: #fff6f9;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px #ddd;
+  margin-top: 2rem;
+}
+
+.poem-text {
+  flex: 1 1 60%;
+}
+
+.poem-photo img {
+  width: 150px;
+  height: auto;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px #ccc;
+}
+
+
   </style>
 </head>
 <body>
@@ -162,7 +187,7 @@
 </div>
 
     <div class="poem-flex">
-  <div class="poem">
+  <div class="poem-text">
     <h3>A Poem for Kukuli</h3>
     <p>My little sweet pea Kukuli,</p>
     <p>He is extremely tickly.</p>
@@ -177,9 +202,8 @@
     <p>With every squeak my heart takes flight,</p>
     <p>My Kukuli is my life & light.</p>
   </div>
-
   <div class="poem-photo">
-    <img src="kukuli-poem.jpg" alt="Kukuli sitting cute" />
+    <img src="kukuli-poem.jpg" alt="Kukuli being cute">
   </div>
 </div>
 
